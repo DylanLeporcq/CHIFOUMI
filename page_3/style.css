@@ -1,0 +1,321 @@
+#intro {
+    display: block;
+}
+
+#all {
+    display: none;
+}
+
+h2 {
+    font-size: 40pt;
+    text-align: center;
+    color: white;
+}
+
+
+body {
+    margin: 0;
+    background-color: #0024c1;
+}
+
+h1 {
+    text-align: center;
+    background-color: #ff000f;
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+}
+
+#game {
+    text-align: center;
+}
+
+#player_game {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: inline-block;
+    padding: 160px;
+    background: rgb(203, 111, 48);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bot_game {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 130px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: inline-block;
+    padding: 160px;
+    background: rgb(151, 50, 46);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#next {
+    font-size: 18pt;
+    border: 3px solid black;
+    border-radius: 3px;
+    background: #fff6fe;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#next:hover {
+    background-color: #1dff13;
+    transition-duration: 0.4s;
+}
+
+#vote {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#rock {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: inline-block;
+    padding: 50px;
+    background: rgb(41, 110, 50);
+    margin-right: 40px;
+    background-image: url("../assets/img/rockIco.png");
+    background-size: cover;
+    background-position: center;
+}
+#paper {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: inline-block;
+    padding: 50px;
+    background: rgb(0, 255, 240);
+    margin-right: 40px;
+    background-image: url("../assets/img/paperIco.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+#scissors {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: inline-block;
+    padding: 50px;
+    background: rgb(255, 0, 175);
+    background-image: url("../assets/img/scisIco.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#egg {
+    text-align: center;
+    font-family: "Cooper Black";
+    border: 6px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 50pt;
+    margin-top: 0;
+    display: none;
+    padding: 50px;
+    background: rgb(255, 249, 0);
+    background-image: url("../assets/img/sinIco.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#rock:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 16px 16px 16px black;
+    cursor: pointer;
+}
+
+#rock:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.4s;
+
+}
+
+#scissors:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 16px 16px 16px black;
+    cursor: pointer;
+}
+
+#scissors:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+
+#paper:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 16px 16px 16px black;
+    cursor: pointer;
+}
+
+#paper:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+
+#egg:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 16px 16px 16px black;
+    cursor: pointer;
+}
+
+#egg:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+
+#scores {
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    font-size: 16pt;
+}
+
+#player_pt {
+    color: white;
+}
+
+#bot_pt {
+    color: white;
+}
+
+#settings {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#close {
+    color: white;
+    font-weight: bold;
+}
+
+#roll:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+#base:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+#ball:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+#cyriak:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+#cache {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+#result {
+    font-size: 30pt;
+    color: white;
+    margin-top: 250px;
+}
+
+#endofpart {
+    line-height: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Gill Sans MT";
+    color: #ffa640;
+    font-size: 22pt;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#pic_player {
+    border : 4px solid black;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/original.jpg");
+}
+
+#pic_bot {
+    border : 4px solid black;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#eric_pic:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#bart_pic:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}#rick_pic:hover {
+     transform: scale(1.1);
+     transition-duration: 0.4s;
+     cursor: pointer;
+ }
