@@ -85,9 +85,9 @@ function clickS() {
         } else if (x === 2) {
             choicebot.style.backgroundImage = "url(../assets/img/charmander_right.png)";
             resultp1.innerHTML='C`est super efficace, vous avez gagné cette manche ! Clickez sur "Manche suivante" !';
-        } else if (x === 3) {
             scoreJ1 = scoreJ1+1;
             playerPT.innerHTML = scoreJ1;
+        } else if (x === 3) {
             choicebot.style.backgroundImage = "url(../assets/img/squirtle_right.png)";
             resultp1.innerHTML='Aucun effet sur le Carapuce ennemi, vous avez fait une égalité. Clickez sur "Manche suivante" !';
         }

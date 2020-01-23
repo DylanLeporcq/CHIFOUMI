@@ -85,9 +85,9 @@ function clickS() {
         } else if (x === 2) {
             choicebot.style.backgroundImage = "url(../assets/img/paperRight.png)";
             resultp1.innerHTML='le cizo coupe la feuille, un poin pour toi coco. clic sur "manche suivante" !';
-        } else if (x === 3) {
             scoreJ1 = scoreJ1+1;
             playerPT.innerHTML = scoreJ1;
+        } else if (x === 3) {
             choicebot.style.backgroundImage = "url(../assets/img/scissorsRight.png)";
             resultp1.innerHTML='bah ya execo la, pas de poin pas de chocola. clic sur "manche suivante" !';
         }
